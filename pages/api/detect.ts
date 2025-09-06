@@ -37,7 +37,7 @@ export default async function handler(
 
     // 设置默认值
     const tf = (timeframe || '1h') as Timeframe;
-    const ex = (exchange || 'binance') as Exchange;
+    const ex = (exchange || 'coingecko') as Exchange; // 默认使用CoinGecko替代Binance
     const dataLimit = limit || 100;
     
     // 获取要检测的指标列表

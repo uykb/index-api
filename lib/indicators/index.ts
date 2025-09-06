@@ -6,7 +6,7 @@ import { RSI, RSIFactory } from './rsi';
 import { ADX, ADXFactory } from './adx';
 import { OBV, OBVFactory } from './obv';
 import { MFI, MFIFactory } from './mfi';
-import { FundingRate, FundingRateFactory } from './fundingRate';
+
 
 // 指标注册表
 class IndicatorRegistry {
@@ -48,7 +48,7 @@ registry.register('rsi', new RSIFactory());
 registry.register('adx', new ADXFactory());
 registry.register('obv', new OBVFactory());
 registry.register('mfi', new MFIFactory());
-registry.register('fundingrate', new FundingRateFactory());
+
 
 export { registry };
 export * from './types';
@@ -59,4 +59,3 @@ export * from './rsi';
 export * from './adx';
 export * from './obv';
 export * from './mfi';
-export * from './fundingRate';
